@@ -1,0 +1,13 @@
+.interior-mask, .interior-image {
+float:right;
+height:340px;
+margin:0px;
+width:321px;
+}
+
+.interior-mask {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(../images/interior-image.png) no-repeat scroll -5px 0;
+}

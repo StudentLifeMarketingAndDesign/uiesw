@@ -1,0 +1,740 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* TABLE OF CONTENTS
+
+01 - Global Elements
+02 - Typography
+03 - Header - Header, Logo, navigation
+04 - Main Structure
+05 - Home Page Content 
+06 - Main Content 
+07 - Sidebar
+08 - Footer    */
+
+
+/* ---------------- 01 - Global Elements ---------------- */
+
+a:hover {text-decoration:underline;}
+
+.typography em {font-style:italic;}
+
+.hidden {display:none;}
+
+.clear {clear:both;}
+
+html,
+body {
+margin:0;
+padding:0;
+height:100%;
+font-size:100%;
+}
+
+iframe {
+	border:none;
+	margin: 0 0 10px 0;}
+	
+.right {
+	float:right;}
+	
+a {color:#0099CC;}
+
+ol li {
+list-style-position:outside;
+list-style-type:decimal;
+margin:0 0 0 20px;
+}
+
+.summary .more a, .typography .more a, .summary .external-link a, .typography .external-link a  {
+color:#f28007;
+text-decoration:none;
+text-transform:uppercase;
+font: bold 0.7em Rockwell, Georgia, Times, "Times New Roman", serif;
+}
+
+.summary .external-link a, 
+.typography .external-link a,
+#projects .external-link a,
+#news .external-link a {
+padding:0 20px 0 0;
+background:url(../images/external-link.png) no-repeat right 0px;}
+
+.more a:hover {text-decoration:underline;} 
+
+/* ---------------- 02 - Typography  ---------------- */
+
+.typography a:hover {text-decoration:underline;}
+
+.typography p {
+margin:0 0 15px 0;
+font:normal .84em/1.4em Arial, Helvetica, sans-serif;
+color:#333;}
+
+
+.summary h2 a, .summary h2  {	
+font:normal 1.6em/1em Rockwell, Georgia, Times, "Times New Roman", serif;
+color:black;
+text-decoration:none;
+}
+
+.typography h1 a, .typography h1 {	
+font:normal 2em/1em Rockwell, Georgia, Times, "Times New Roman", serif;
+color:black;
+text-decoration:none;
+}
+
+.typography h2 a, .typography h2 {	
+font:normal 1.6em/1em Rockwell, Georgia, Times, "Times New Roman", serif;
+color:#7d4334;
+text-decoration:none;
+margin:0 0 10px 0;
+}
+
+
+.typography h3 a, .typography h3 {	
+font:lighter 1.3em/1em Rockwell, Georgia, Times, "Times New Roman", serif;
+color:#7d4334;
+text-decoration:none;
+margin:0 0 10px 0;
+}
+
+.typography h4 a, .typography h4 {	
+font:normal 1.2em/1em Rockwell, Georgia, Times, "Times New Roman", serif;
+color:#007581;
+text-decoration:none;
+margin:0 0 10px 0;
+}
+
+.typography h5 a, .typography h5 {	
+font:lighter 1.2em/1em Rockwell, Georgia, Times, "Times New Roman", serif;
+color:#007581;
+text-decoration:none;
+margin:0 0 10px 0;
+}
+
+.typography h6 a, .typography h6 {	
+font:normal 1em/1em Rockwell, Georgia, Times, "Times New Roman", serif;
+color:#F28007;
+text-decoration:none;
+margin:0 0 10px 0;
+}
+
+
+h3 a {
+background:white;
+text-decoration:none;
+color:#666;
+font: normal 1.5em Rockwell, Georgia, Times, "Times New Roman", serif;}
+
+h4 a {
+text-decoration:none;
+color:#007581;
+font: normal 1.2em Arial, Helvetica, sans-serif}
+
+#news h4 a {
+font-size:1em;
+color:#E88A1A;}
+
+
+h3 a span {
+color:#E88A1A;
+}
+
+h3 a strong {
+color:#ccc;
+}
+
+.typography ul {margin-bottom:20px;}
+
+.typography ul li {
+list-style-image:url(../images/arrows.png);
+list-style-position:outside;
+margin:0 0 0 20px;
+padding:0 0 0 10px;
+font:normal .84em/1.6em Arial, Helvetica, sans-serif;
+color:#333;}
+
+/* ---------------- 03 - Header - logo, navigation ---------------- */
+
+#header {
+width:980px;
+margin:0px auto 0px auto;
+}
+
+#content-container {
+min-height:140px;
+background:url(../images/diagonal.png) no-repeat scroll 50% -13px;}
+
+h1.logo a {
+float:left;
+display:block;
+text-indent:-9999px;
+width:980px;
+outline: none;
+
+background:url(../images/logo.png) no-repeat -7px 8px;
+height:70px;}
+
+p.uiowa a {
+float:left;
+display:block;
+text-indent:-9999px;
+width:230px;
+outline: none;
+background:url(../images/uiowa.png) no-repeat -7px 6px;
+height:30px;}
+
+#division-header p.esw a:hover {color:#999;}
+#division-header p.ce a:hover {color:#999;}
+p.ce {
+padding:11px 0 0 0;
+float:left;}
+
+p.ce a {
+	color:#afa8a8;}
+	
+#division-wrapper {
+height:34px;	
+background:#666;}
+
+#division-header {
+width:980px;
+margin:0px auto 0px auto;
+}
+
+#division-header p a {
+font:lighter .9em Arial, Helvetica, sans-serif;
+text-decoration:none;
+
+letter-spacing:.05em;
+text-transform:uppercase;}
+
+p.esw a{	
+color:#74ca49;
+background:url(../images/header-logo.png) no-repeat 0px 7px;
+padding:11px 0 0 30px;
+float:right;}
+
+/* nav */
+
+
+#nav ul {
+width:915px;
+margin:2px 0px 0px 0px;float:right;}
+#nav ul li a:hover {text-decoration:underline;}
+#nav ul li a {
+color:#825e55;
+text-decoration:none;}
+#nav ul li {
+font: lighter 1.4em Rockwell, Georgia, Times, "Times New Roman", serif;
+text-transform:uppercase;
+text-align:center;
+padding:32px 0 0 0;
+float:left;}
+#nav ul li.home  {width:120px;background:url(../images/1.png) no-repeat 0px 14px;}
+#nav ul li.news-and-events {
+background:transparent url(../images/3.png) no-repeat scroll 200px 12px;
+width:215px;
+}
+#nav ul li.projects {
+background:transparent url(../images/4.png) no-repeat scroll 138px 12px;
+width:150px;
+}
+#nav ul li.about {
+background:transparent url(../images/5.png) no-repeat scroll 116px 8px;
+width:125px;
+}
+
+#nav ul li.donate {
+width:125px;
+}
+#nav ul li.join-uiesw {width:170px;background:url(../images/6.png) no-repeat 156px 4px;}
+
+
+
+/* ---------------- 04 - Main Structure ---------------- */
+
+#container {
+min-height:100%;
+position:relative;
+}
+
+#body {padding-bottom:206px;   /* Height of the footer */}
+
+#wrapper {
+clear:both;
+margin:0 auto;
+min-height:400px;
+padding:25px 0 0;
+width:980px;
+}
+
+#content {
+width:700px;
+padding:0 0 50px 0;
+float:left;}
+
+
+/* ---------------- 05 - Home Page ---------------- */
+
+#background-image {
+min-height:630px;
+background:/*#c1e1de*/ url(../images/background-interior.jpg) repeat-x scroll 50% -17px;}
+
+#subfeature-wrapper {
+min-height:400px;
+background: #e7eef5 url(../images/gradient.png) repeat-x 0px -20px;}
+
+#subfeature {
+width:980px;
+padding:15px 0 0 0;
+background: url(../images/line.png) no-repeat 75px 24px;
+margin:0px auto 0px auto;}
+
+/* Home Page Image Box */	
+
+#rotate {
+width:980px;
+margin:0px auto 0px auto;}
+
+.feature-image {
+width:482px;
+height:482px;
+float:right;
+}
+
+.feature-mask {
+width:482px;
+height:482px;
+background:url(../images/mask.png) no-repeat 0px 0px;}
+
+.thumbnail-mask1 {
+width:162px;
+height:156px;
+background: url(../images/mask1.png) no-repeat;
+}
+
+.thumbnail-mask2 {
+width:168px;
+height:156px;
+background: url(../images/mask2.png) no-repeat;
+}
+
+.thumbnail-mask3 {
+width:164px;
+height:156px;
+background: url(../images/mask3.png) no-repeat;
+}
+
+.thumbnail {
+background: url(../images/feature1.jpg) no-repeat;
+width:162px;
+height:156px;}
+
+/* join */
+
+#join {
+padding:0 20px 0 20px;
+width:262px;
+float:left;}
+
+p.join {margin:50px 0 0 15px;}
+p.join a {
+-moz-border-radius: 9px;
+-webkit-border-radius: 9px;
+-moz-box-shadow:2px 2px 2px #999;
+-webkit-box-shadow: 2px 2px 2px #999;
+box-shadow: 2px 2px 2px #999;
+border: 1px solid black;
+text-decoration:none;
+background:#D28230 url(../images/white-trans.png) repeat-x 0px 0px;
+color:white;
+padding:10px 50px;
+text-align:center;
+font:bold 1.2em Tahoma, Geneva, sans-serif;}
+
+#join p {color:#333;}
+
+#join ul li {
+margin:0 15px 15px 0;
+font:normal 1em Arial, Helvetica, sans-serif;
+padding:10px 0 10px 70px;
+height:35px;
+}
+
+#join ul li.one {background:url(../images/one.png) no-repeat;}
+#join ul li.two {background:url(../images/two.png) no-repeat;}
+#join ul li.three {background:url(../images/three.png) no-repeat 0px -5px;}
+
+/* current projects */
+
+#projects {
+width:368px;
+margin:0 20px 0 0;
+float:left;}
+
+#projects ul li {margin:0 0 20px 0;}
+
+#projects ul li.position1 {
+	border-bottom:1px dashed #999;}
+	
+#projects ul li {
+padding:0 0 10px 0;
+}
+
+#projects .more a, #projects .external-link a  {color:#C90;}
+#projects ul, #join ul, #news ul {padding:0 20px 0 0;}
+#projects ul, #join ul, #news ul {margin:20px 0px 0 0;}
+
+#news .more a  {color:#0099CC;}
+#news ul li{margin:0 0 25px 0;}
+
+#projects .more a, 
+#news .more a, 
+#news .external-link a,
+#projects .external-link a {
+text-decoration:none;
+font:bold .7em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#projects p.date {
+color:#666;
+font: normal 1em Georgia;}
+
+#news p {margin:0;}
+#projects p	{margin:0 0 10px 0;}
+
+#projects p, #news p {
+color:#666;
+font: normal .8em/1.3em Arial;}
+
+#news p.date, ul.news-holder li p.date, p.date {
+margin:0 0 5px 0;	
+color:black;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+text-decoration:underline;}
+
+#news p.date {
+font-size:.7em; 
+color:#333;
+text-decoration:none;}
+
+#news {
+float:left;
+padding:0 0 0 25px;
+width:265px;
+}
+
+#news p.location, ul.news-holder p.location, p.location {
+font:italic 11px Arial;
+border:1px solid #999;
+padding:5px;
+float:right;
+margin:0px;}
+
+/* ---------------- 06 - Main Content Interior Pages ---------------- */
+
+.video {
+margin:20px 0 0 20px;
+clear:both;
+float:right;}
+
+.news-thumb-image,
+.news-thumb-mask1,
+.news-thumb-mask2, 
+.news-thumb-mask3, 
+.news-thumb-mask4, 
+.news-thumb-mask5, 
+.news-thumb-mask6, 
+.news-thumb-mask7 {
+width:159px;
+float:left;
+height:158px;}
+
+.news-thumb-mask1 { background: url(../images/news-holder-thumb1.png) no-repeat;}
+.news-thumb-mask2 { background: url(../images/news-holder-thumb2.png) no-repeat;}
+.news-thumb-mask3{ background: url(../images/news-holder-thumb3.png) no-repeat;}
+.news-thumb-mask4 { background: url(../images/news-holder-thumb3.png) no-repeat;}
+.news-thumb-mask5 {background: url(../images/news-holder-thumb3.png) no-repeat;}
+.news-thumb-mask6 { background: url(../images/news-holder-thumb3.png) no-repeat;}
+.news-thumb-mask7 { background: url(../images/news-holder-thumb3.png) no-repeat;}
+
+.thumb-image, .thumb-mask1, .thumb-mask2, .thumb-mask3, .thumb-mask4, .thumb-mask5, .thumb-mask6, .thumb-mask7, .thumb-mask8 {
+width:159px;
+margin:0 0 5px 0;
+float:right;
+height:162px;}
+
+.thumb-mask1 { background: url(../images/thumbnail1.png) no-repeat;}
+.thumb-mask2 { background: url(../images/thumbnail2.png) no-repeat;}
+.thumb-mask3 { background: url(../images/thumbnail4.png) no-repeat;}
+.thumb-mask4 { background: url(../images/thumbnail5.png) no-repeat;}
+
+.thumb-mask5, .thumb-mask6, .thumb-mask7, .thumb-mask8  { background: url(../images/thumbnail3.png) no-repeat;}
+
+.interior-mask, .interior-image {
+width:326px;
+height:340px;
+margin:0 0 20px 20px;
+float:right;}
+
+.interior-image { background: url(../images/feature1.jpg) no-repeat;}
+.interior-mask { background: url(../images/interior-image.png) no-repeat;}
+
+.interior-mask p {
+padding:305px 0 0 0;
+text-align:center;
+color:#666;
+font:italic .8em Georgia, "Times New Roman", Times, serif;}
+
+/* news and events / projects pages */
+
+ul.projects-holder  li p.date a {color:#666;}
+ul.projects-holder  li p {color:#666;}
+ul.projects-holder  li p,  ul.news-holder li p {font-size:1em;}
+ul.projects-holder  li h2,  ul.news-holder li h2 {font-size:1.8em;line-height:1px;}
+ul.news-holder li p.date {font-size:.9em;}
+ul.news-holder li.personnel h2 {padding-top:40px;}
+ul.news-holder li.personnel {height:158px;}
+ul.news-holder li .more a, ul.news-holder li .external-link a {color:#007581;}
+
+ul.news-holder li {
+border-bottom:1px dotted #666;
+list-style-image:none;
+padding:0 0 10px 0;
+margin:0 0 20px 0;}
+
+ul.news-holder li h2 a {color:#F28007;}
+ul.projects-holder li h2 {margin:10px 0 0 0;}
+	
+ul.projects-holder li h2 a, ul.news-holder li h2 a {
+text-decoration:none;
+font: normal .7em Arial, Helvetica, sans-serif}
+
+ul.projects-holder li h2 a {color:#007581;}
+
+p.pageNumbers a {color:#F28007;}
+
+
+ul.projects-holder li.position2,
+ul.projects-holder li.position4,
+ul.projects-holder li.position6,
+ul.projects-holder li.position8 {
+height:167px;
+padding:0 0 0 36px;
+width:320px;}
+
+ul.projects-holder li {
+list-style-image:none;
+margin:-10px 0px 30px 0;
+padding:0px;
+width:335px;
+float:left;
+}
+
+
+/*join page */
+
+h2.join1, h2.join2 {
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-box-shadow:2px 2px 2px #ccc;
+-webkit-box-shadow: 2px 2px 2px #ccc;
+box-shadow: 2px 2px 2px #999;
+padding:7px 0px 5px 10px;
+margin-bottom:20px;
+color:white;
+font-weight:lighter;
+background:#E88A1A;}
+
+h2.join2 {
+background:#B56D1D;}
+
+.options h3, .options2 h3, .options3 h3 {
+color:#666;
+margin-bottom:20px;
+font-weight:normal;}
+
+.options3 h4 {
+color:#A59E97;
+font:italic 1em Georgia, "Times New Roman", Times, serif;}
+
+.options p, .options2 p {
+line-height:1.2em;}
+
+.options, .options2, .options3 {
+padding:20px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+float:left;
+width:178px;
+margin-bottom:30px;
+min-height:220px;
+border:1px dashed #333;
+}
+
+.options3 {
+background: url(../images/screenshot.jpg) no-repeat 380px 30px;
+width:659px;}
+
+.options2 {
+margin:0 20px 0 20px;}
+
+p.sign-up  {margin-top:10px;}
+p.sign-up a {
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-box-shadow:2px 2px 2px #ccc;
+-webkit-box-shadow: 2px 2px 2px #ccc;
+box-shadow: 2px 2px 2px #999;
+text-decoration:none;
+background:#A5AEAF url(../images/white-trans.png) repeat-x 0px 0px;
+color:white;
+text-transform:uppercase;
+padding:5px 10px;
+text-align:center;
+font:normal 1em Rockwell, Georgia, Times, "Times New Roman", serif;}
+
+
+
+/* ---------------- 07 - Sidebar ---------------- */
+
+#sidebar a:hover {text-decoration:underline;}
+
+#sidebar {
+margin:8px 0 0 0;
+float:right;
+width:280px;
+min-height:300px;}
+
+#sidebar #projects h4 a {font-size:1em;}
+#sidebar #projects h3 a {background-color:transparent;}
+#sidebar #projects {margin:0 0 0 54px;}
+
+#sidebar #news,
+#sidebar #projects {width:235px;}
+
+#sidebar #news {padding:0 0 0 54px;}
+
+#sidebar #news ul  {padding:0px;}
+#sidebar #projects ul li {border-bottom:none;}
+
+#sidebar #news h3 a {background-color:transparent;}
+
+
+/* ---------------- 08 - Footer  ---------------- */
+
+#footer-wrapper {
+border-top:1px dotted #666;
+position:absolute;
+bottom:0;
+width:100%;
+height:206px;   /* Height of the footer */
+background:white;
+}
+
+#footer a:hover {text-decoration:underline;}
+
+#footer {
+width:980px;
+padding:40px 0 20px 0;
+margin:0 auto 0 auto;}
+
+p.footer-logo a {
+background:transparent url(../images/footer-logo.png) no-repeat scroll -4px 0;
+border-bottom:1px solid orange;
+display:block;
+height:50px;
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+text-indent:-9999px;
+width:980px;
+}
+
+#contact {
+margin:5px 0 0 0;
+text-align:right;
+float:right;}
+
+p.engineering a {
+color:#F90;
+text-decoration:none;}
+
+#contact p {
+font:normal .8em Arial, Helvetica, sans-serif;
+color:#666;
+}
+
+.menu li a {
+font: normal 1em Rockwell, Georgia, Times, "Times New Roman", serif;
+text-transform:uppercase;
+color:#999;
+text-decoration:none;
+}
+
+.menu li {
+text-align:left;
+float:left;
+width:110px;}
+
+.menu li.home{width:80px;}
+.menu li.news-and-events {width:160px;}
+.menu li.projects{width:110px;}
+.menu li.about{width:90px;}
+.menu li.join-uiesw{width:100px;}
+
+.menu ul {text-align:left;}
+
+.menu li {margin-left:0px;}
+
+.menu  {margin-left:0px;}
+
+.menu {
+margin-left:0px;
+margin-top:10px;
+float:left;}
+
+ul.menu li ul {margin-top:20px;}
+
+.esw-img {margin:7px 0 0 0;}
+
+p.copywright {
+font:normal .8em Arial, Helvetica, sans-serif;
+margin:0 0 20px 0;}
+
+p.copywright a {
+text-decoration:none;
+color:#0099CC;}
+
+
+#personnel ul {
+  list-style-type: none !important;
+  margin: 0px;
+  padding: 0px;
+}
+#personnel li {
+  float: left;
+  list-style-type: none !important;
+  list-style-image: none;
+  margin: 0px 0px 0px 15px;
+  padding: 0px;
+  width: 325px;
+}
+.news_thumb {
+  float:left;
+  height:158px;
+  width:159px;
+}
+.news_mask {
+  background: url(../images/news-holder-thumb3.png) no-repeat;
+  float:right;
+  height:162px;
+  margin:0 0 5px 0;
+  width:159px;
+}
+#personnel_top {
+  height: 10px;
+}
