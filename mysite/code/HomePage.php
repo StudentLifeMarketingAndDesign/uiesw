@@ -4,18 +4,18 @@
  */
  
 class HomePage extends Page {
- static $db = array(
+	private static $db = array(
 
   
 );
-   static $has_one = array(
+	private static $has_one = array(
  
    );
    
    function getCMSFields() {
    $fields = parent::getCMSFields();
    
-   $fields->removeFieldFromTab("Root.Content.Main","Content");
+   $fields->removeFieldFromTab("Root.Main","Content");
    
 
 
@@ -34,8 +34,8 @@ class HomePage_Controller extends Page_Controller {
 	
 	
 		function rss() {
-			$set = DataObject::get("NewsPage");
-			
+			//$set = DataObject::get("NewsPage");
+			$set = NewsPage::get(); 
 			$rss = new RSSFeed($set, $this->Link(), "News Feed", "Shows a list of the most recently updated news and events.", "Title", "Content", "Author");
 			$rss->outputToBrowser();
 	}	

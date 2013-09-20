@@ -4,7 +4,7 @@
  */
  
 class PersonnelPage extends Page {
- static $db = array(
+ private static $db = array(
 
 "PersonnelEmail" => "Text",
 "PersonnelTitle" => "Text",
@@ -13,7 +13,7 @@ class PersonnelPage extends Page {
 
   
 );
-   static $has_one = array(
+   private static $has_one = array(
    
   	'ContentImage' => 'Image'
  
@@ -22,11 +22,11 @@ class PersonnelPage extends Page {
    function getCMSFields() {
    $fields = parent::getCMSFields();
    
-	$fields->addFieldToTab('Root.Content.Main', new TextField('PersonnelEmail', 'Email Address'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('PersonnelTitle', 'Title'));
-    $fields->addFieldToTab('Root.Content.Images', new ImageField('ContentImage', 'Profile Picture Here MUST be 484x486 pixels'));
-	$fields->addFieldToTab('Root.Content.Video', new TextField('YoutubeLink', 'Enter code at end of youtube url here'));
-	$fields->addFieldToTab('Root.Content.Video', new TextField('YoutubeCaption', 'Enter caption here'));
+	$fields->addFieldToTab('Root.Main', new TextField('PersonnelEmail', 'Email Address'));
+	$fields->addFieldToTab('Root.Main', new TextField('PersonnelTitle', 'Title'));
+    $fields->addFieldToTab('Root.Images', new UploadField('ContentImage', 'Profile Picture Here MUST be 484x486 pixels'));
+	$fields->addFieldToTab('Root.Video', new TextField('YoutubeLink', 'Enter code at end of youtube url here'));
+	$fields->addFieldToTab('Root.Video', new TextField('YoutubeCaption', 'Enter caption here'));
 	
    return $fields;
 }

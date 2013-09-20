@@ -4,7 +4,7 @@
 
 <% if ContentImage %>
 
-<div class="interior-image" style="background: url(<% control ContentImage.SetWidth(300) %>$Filename<% end_control %>) no-repeat 12px 5px;">
+<div class="interior-image" style="background: url(<% loop ContentImage.SetWidth(300) %>$Filename<% end_loop %>) no-repeat 12px 5px;">
 <div class="interior-mask">
 
 <p>$Title</p>

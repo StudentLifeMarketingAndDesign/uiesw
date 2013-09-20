@@ -1,7 +1,7 @@
 
 <div id="rotate">
 
-<% control Home %>
+<% loop Home %>
 
 
 
@@ -24,7 +24,7 @@
 
 </div><!--end summary-->
 
-<div class="feature-image" style="background: url(<% control FeatureImage.SetWidth(484) %>$Filename<% end_control %>) no-repeat 0px 0px;">
+<div class="feature-image" style="background: url(<% loop FeatureImage.SetWidth(484) %>$Filename<% end_loop %>) no-repeat 0px 0px;">
 <div class="feature-mask">
 </div><!--end feature-image-->
 </div><!--end feature mask-->
@@ -32,7 +32,7 @@
 
 
 </div><!--end tab 1 -->
-<% end_control %>
+<% end_loop %>
 
 
 
@@ -41,17 +41,17 @@
 <ul class="ui-tabs-nav">
 
 
-<% control Home %>
+<% loop Home %>
 
 <li id="menu$Pos" <% if First %>class="ui-tabs-selected"<% end_if %>>
-<div class="thumbnail" style="background: url(<% control FeatureImage.SetWidth(160) %>$Filename<% end_control %>) no-repeat 0px 0px;">
+<div class="thumbnail" style="background: url(<% loop FeatureImage.SetWidth(160) %>$Filename<% end_loop %>) no-repeat 0px 0px;">
 <div class="thumbnail-mask$Pos">
 <p><a href="/#tab$Pos">$Title</a></p>
 </div><!--end thumbnail-->
 </div><!--end thumbnail mask -->
 
 </li>
-<% end_control %>
+<% end_loop %>
 </ul>
 
 
@@ -66,7 +66,7 @@
 <h3><a href="/projects/"><span>Current</span> Projects</a></h3>
 
 <ul>
-<% control Projects %>
+<% loop Projects %>
 <li class="position$Pos">
 <h4><a href="$Link">$Title</a></h4>
 <p class="date">$ProjectsScope</p>
@@ -77,21 +77,21 @@
 <span class="more"><a href="$Link">Read More</a></span>
 <% end_if %></li>
 
-<% end_control %>
+<% end_loop %>
 </ul>
 
 
 </div><!--end projects-->
 
 <div id="join">
-<h3><a href="$BaseHref/join-uiesw/"><span>Join</span> UIESW</a></h3>
+<h3><a href="$BaseHref/join-uiesw/"><span>Join</span> UI USGBC</a></h3>
 <ul>
-<li class="one"><p>Sign Up to the ESW Email List</p></li>
-<li class="two"><p>Come to a ESW General Meeting </p></li>
+<li class="one"><p>Sign Up to the USGBC Email List</p></li>
+<li class="two"><p>Come to a USGBC General Meeting </p></li>
 <li class="three"><p>Join a Project </p></li>
 </ul>
 
-<p class="join"><a href="$BaseHref/join-uiesw/">Join UIESW</a></p>
+<p class="join"><a href="$BaseHref/join-uiesw/">Join UI USGBC</a></p>
 
 </div><!--end join -->
 
@@ -101,7 +101,7 @@
 <h3><a href="/news-and-events/"><span>News</span><strong> &amp;</strong> Events</a></h3>
 <ul>
 
-<% control News %>
+<% loop News %>
 <li>
 <h4><a href="$Link">$Title</a></h4>
 <% if NewsDate %>
@@ -113,7 +113,7 @@ $getSummaryHTML(Content, 6)
 <% else %>
 <span class="more"><a href="$Link">Read More</a></span>
 <% end_if %></li>
-<% end_control %>
+<% end_loop %>
 </ul>
 
 

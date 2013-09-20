@@ -2,10 +2,10 @@
 
 class Page extends SiteTree {
 	
-	public static $db = array(
+	private static $db = array(
 	);
 	
-	public static $has_one = array(
+	private static $has_one = array(
 	);
 	
 	  /*
@@ -67,27 +67,27 @@ class Page_Controller extends ContentController {
 	}
 	
 		function Home($limit=3) {
-		$set = DataObject::get("HomePageTab", null, null, null, $limit);
-		
+		//$set = DataObject::get("HomePageTab", null, null, null, $limit);
+		$set = HomePageTab::get()->limit($limit);
 		return $set;
 	}
 	
 	function Projects($limit=2) {
-		$set = DataObject::get("ProjectsPage", null, null, null, $limit);
-		
+		//$set = DataObject::get("ProjectsPage", null, null, null, $limit);
+		$set = ProjectsPage::get()->limit($limit);
 		return $set;
 	}
 	
 	
 		function News($limit=3) {
-		$set = DataObject::get("NewsPage", null, null, null, $limit);
-		
+		//$set = DataObject::get("NewsPage", null, null, null, $limit);
+		$set = NewsPage::get()->limit($limit);
 		return $set;
 	}
 	
 			function NewsList($limit=5) {
-		$set = DataObject::get("NewsPage", null, null, null, $limit);
-		
+		//$set = DataObject::get("NewsPage", null, null, null, $limit);
+		$set = NewsPage::get()->limit($limit);
 		return $set;
 	}
 	
@@ -117,10 +117,10 @@ class Page_Controller extends ContentController {
 	 */ 
 	function SearchForm() {
 		$searchText = isset($_REQUEST['Search']) ? $_REQUEST['Search'] : 'Search';
-		$fields = new FieldSet(
+		$fields = new FieldList(
 	      	new TextField("Search", "", $searchText)
 	  	);
-		$actions = new FieldSet(
+		$actions = new FieldList(
 	      	new FormAction('results', 'Search')
 	  	);
 
@@ -143,9 +143,9 @@ class Page_Controller extends ContentController {
 	function RSSFeedImport($numItems) {
 		
 		$feedURL= "feed://sustainability.uiowa.edu/events/rss?alt=rss";
-	  $output = new DataObjectSet();
+	  $output = new DataList();
 	  
-	  include_once(Director::getAbsFile(SAPPHIRE_DIR . '/thirdparty/simplepie/simplepie.inc'));
+	  include_once(Director::getAbsFile(FRAMEWORK_DIR . '/thirdparty/simplepie/simplepie.inc'));
 	  
 	  $t1 = microtime(true);
 	  $feed = new SimplePie($feedURL, TEMP_FOLDER);

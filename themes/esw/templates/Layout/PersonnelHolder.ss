@@ -11,12 +11,12 @@ $Content
 
 
 <ul class="news-holder">
-<% control Children %>
+<% loop Children %>
 <li class="personnel">
 
 <% if ContentImage %>
 
-<div class="news-thumb-image" style="background: url(<% control ContentImage.SetWidth(130) %>$Filename<% end_control %>) no-repeat 13px 7px;">
+<div class="news-thumb-image" style="background: url(<% loop ContentImage.SetWidth(130) %>$Filename<% end_loop %>) no-repeat 13px 7px;">
 <div class="news-thumb-mask$Pos">
 </div>
 </div>
@@ -28,7 +28,7 @@ $Content
 <h2><a href="$Link">$Title</a></h2>
 <p class="date">$PersonnelTitle</p>
 <span class="more"><a href="mailto:$PersonnelEmail">$PersonnelEmail</a></span></li>
-<% end_control %>
+<% end_loop %>
 </ul>
 
 

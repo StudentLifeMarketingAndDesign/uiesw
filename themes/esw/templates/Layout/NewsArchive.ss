@@ -9,12 +9,12 @@ $Content
 
  
 <ul class="news-holder">
-<% control allNews %>
+<% loop allNews %>
 <li>
 
 <% if ProjectImage %>
 
-<div class="news-thumb-image" style="background: url(<% control NewsImage.SetWidth(200) %>$Filename<% end_control %>) no-repeat 0px 0px;">
+<div class="news-thumb-image" style="background: url(<% loop NewsImage.SetWidth(200) %>$Filename<% end_loop %>) no-repeat 0px 0px;">
 <div class="news-thumb-mask$Pos">
 </div>
 </div>
@@ -37,7 +37,7 @@ $getSummaryHTML(Content, 34)
 <% else %>
 <span class="more"><a href="$Link">Read More</a></span>
 <% end_if %></li>
-<% end_control %>
+<% end_loop %>
 </ul>
 
   <% if allNews.MoreThanOnePage %>
@@ -46,13 +46,13 @@ $getSummaryHTML(Content, 34)
 <a href="$allNews.PrevLink"><< Prev</a> |
 <% end_if %>
 
-<% control allNews.Pages %>
+<% loop allNews.Pages %>
 <% if CurrentBool %>
 <strong>$PageNum</strong>
 <% else %>
 <a href="$Link" title="Go to page $PageNum">$PageNum</a>
 <% end_if %>
-<% end_control %>
+<% end_loop %>
 
 <% if allNews.NextLink %>
 | <a href="$allNews.NextLink">Next >></a>
@@ -71,11 +71,11 @@ $getSummaryHTML(Content, 34)
 <p><em>Events from the Office of Sustainability</em></p>
 <ul>
 
-<% control RSSFeedImport(3) %>
+<% loop RSSFeedImport(3) %>
 <li>
 <h4><a href="$Link">$Title</a></h4>
 <span class="external-link"><a href="$Link">Read More</a></span></li>
-<% end_control %>
+<% end_loop %>
 </ul>
 
 </div>

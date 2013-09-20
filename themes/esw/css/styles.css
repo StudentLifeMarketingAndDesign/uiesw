@@ -164,7 +164,7 @@ margin:0px auto 0px auto;
 
 #content-container {
 min-height:140px;
-background:url(../images/diagonal.png) no-repeat scroll 50% -13px;}
+background:url(../images/diagonal.png) no-repeat scroll 50% -9px;}
 
 h1.logo a {
 float:left;
@@ -172,8 +172,7 @@ display:block;
 text-indent:-9999px;
 width:980px;
 outline: none;
-
-background:url(../images/logo.png) no-repeat -7px 8px;
+background:url(../images/uigbclogo.png) no-repeat -1px 11px;
 height:70px;}
 
 p.uiowa a {
@@ -212,8 +211,9 @@ text-transform:uppercase;}
 
 p.esw a{	
 color:#74ca49;
-background:url(../images/header-logo.png) no-repeat 0px 7px;
-padding:11px 0 0 30px;
+/*background:url(../images/USGBC.png) no-repeat -1px 6px;*/
+background-size: 26px 21px;
+padding:9px 0 5px 30px;
 float:right;}
 
 /* nav */
@@ -643,7 +643,7 @@ padding:40px 0 20px 0;
 margin:0 auto 0 auto;}
 
 p.footer-logo a {
-background:transparent url(../images/footer-logo.png) no-repeat scroll -4px 0;
+background:transparent url(../images/footer-logo2.png) no-repeat scroll -4px 0;
 border-bottom:1px solid orange;
 display:block;
 height:50px;
@@ -694,7 +694,7 @@ width:110px;}
 
 .menu {
 margin-left:0px;
-margin-top:10px;
+margin-top:-144px;
 float:left;}
 
 ul.menu li ul {margin-top:20px;}

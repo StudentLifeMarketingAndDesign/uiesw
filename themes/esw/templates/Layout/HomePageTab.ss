@@ -4,7 +4,7 @@
 
 <% if FeatureImage %>
 
-<div class="interior-image" style="background: url(<% control FeatureImage.SetWidth(326) %>$Filename<% end_control %>) no-repeat 0px 0px;">
+<div class="interior-image" style="background: url(<% loop FeatureImage.SetWidth(326) %>$Filename<% end_loop %>) no-repeat 0px 0px;">
 <div class="interior-mask">
 
 <p>$Title</p>

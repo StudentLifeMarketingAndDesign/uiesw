@@ -4,7 +4,7 @@
 
 <% if NewsImage %>
 
-<div class="interior-image" style="background: url(<% control NewsImage.SetWidth(400) %>$Filename<% end_control %>) no-repeat 0px 0px;">
+<div class="interior-image" style="background: url(<% loop NewsImage.SetWidth(400) %>$Filename<% end_loop %>) no-repeat 0px 0px;">
 <div class="interior-mask">
 
 <p>$Title</p>
@@ -56,11 +56,11 @@ $Content
 <p><em>Events from the Office of Sustainability</em></p>
 <ul>
 
-<% control RSSFeedImport(3) %>
+<% loop RSSFeedImport(3) %>
 <li>
 <h4><a href="$Link">$Title</a></h4>
 <span class="external-link"><a href="$Link">Read More</a></span></li>
-<% end_control %>
+<% end_loop %>
 </ul>
 
 </div>

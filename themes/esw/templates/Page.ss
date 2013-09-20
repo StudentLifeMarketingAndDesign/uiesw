@@ -104,7 +104,7 @@ div.edit-box a:hover { background: black; color: white }
 <div id="division-header">
 <p class="uiowa"><a href="http://www.uiowa.edu/">The University of Iowa</a></p>
 <p class="ce"><a href="http://www.engineering.uiowa.edu/">College of Engineering</a></p>
-<p class="esw"><a href="http://www.esustainableworld.org/">Engineers for a Sustainable World</a></p>
+<p class="esw"><a href="http://www.esustainableworld.org/">University of Iowa U.S. Green Building Council</a></p>
 </div><!--end division header-->
 </div><!--end division wrapper-->
 
@@ -147,13 +147,13 @@ Fax (319) 335-5660</p>
 <!--end contact-->
 
   <ul class="menu">
-       <% control Menu(1) %>
+       <% loop Menu(1) %>
                 <li class="$URLSegment"><a href="$Link">$MenuTitle</a>
                  </li>
-            <% end_control %>
+            <% end_loop %>
       </ul>
 
-<a href="http://www.esustainableworld.org/"><img class="esw-img" src="$ThemeDir/images/esw2.png" alt="Engineers for a Sustainable World" longdesc="http://www.esustainableworld.org" /></a>
+<!--- <a href="http://www.esustainableworld.org/"><img class="esw-img" src="$ThemeDir/images/esw2.png" alt="Engineers for a Sustainable World" longdesc="http://www.esustainableworld.org" /></a>--->
 
 
 <!--end footer--></div>

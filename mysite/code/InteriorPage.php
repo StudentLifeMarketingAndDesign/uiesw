@@ -4,12 +4,12 @@
  */
  
 class InteriorPage extends Page {
- static $db = array(
+	private static $db = array(
 
 	"YoutubeLink" => "Text",
   	"YoutubeCaption" => "Text",
 );
-   static $has_one = array(
+   	private static $has_one = array(
    
   	'ContentImage' => 'Image'
  
@@ -18,9 +18,9 @@ class InteriorPage extends Page {
    function getCMSFields() {
    $fields = parent::getCMSFields();
    
-	$fields->addFieldToTab('Root.Content.Video', new TextField('YoutubeLink', 'Enter code at end of youtube url here'));
-	$fields->addFieldToTab('Root.Content.Video', new TextField('YoutubeCaption', 'Enter caption here'));
-    $fields->addFieldToTab('Root.Content.Images', new ImageField('ContentImage', 'Interior page image MUST be 484x486 pixels'));
+	$fields->addFieldToTab('Root.Video', new TextField('YoutubeLink', 'Enter code at end of youtube url here'));
+	$fields->addFieldToTab('Root.Video', new TextField('YoutubeCaption', 'Enter caption here'));
+    $fields->addFieldToTab('Root.Images', new UploadField('ContentImage', 'Interior page image MUST be 484x486 pixels'));
 
    return $fields;
 }

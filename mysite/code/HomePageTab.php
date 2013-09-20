@@ -4,13 +4,13 @@
  */
 class HomePageTab extends SiteTree {
 
-	static $defaults = array( 
+	private static $defaults = array( 
 	
 	);
 	
 	
 
-   static $db = array(
+   private static $db = array(
 
 	"ExternalLink" => "Text",
 	"YoutubeLink" => "Text",
@@ -20,7 +20,7 @@ class HomePageTab extends SiteTree {
    
    
    
-   static $has_one = array(
+   private static $has_one = array(
    	'FeatureImage' => 'Image'
    
    );
@@ -30,10 +30,10 @@ class HomePageTab extends SiteTree {
 function getCMSFields() {
 	$fields = parent::getCMSFields();
 	
-	$fields->addFieldToTab('Root.Content.Main', new TextField('ExternalLink', 'External Link that links the user to another site instead of an interior page - Enter Full URL that you want to link to'));
-	$fields->addFieldToTab('Root.Content.Images', new ImageField('FeatureImage', 'Feature Box Image MUST be 484x486 pixels'));
-	$fields->addFieldToTab('Root.Content.Video', new TextField('YoutubeLink', 'Enter code at end of youtube url here'));
-	$fields->addFieldToTab('Root.Content.Video', new TextField('YoutubeCaption', 'Enter caption here'));
+	$fields->addFieldToTab('Root.Main', new TextField('ExternalLink', 'External Link that links the user to another site instead of an interior page - Enter Full URL that you want to link to'));
+	$fields->addFieldToTab('Root.Images', new UploadField('FeatureImage', 'Feature Box Image MUST be 484x486 pixels'));
+	$fields->addFieldToTab('Root.Video', new TextField('YoutubeLink', 'Enter code at end of youtube url here'));
+	$fields->addFieldToTab('Root.Video', new TextField('YoutubeCaption', 'Enter caption here'));
 	
 	
     return $fields;

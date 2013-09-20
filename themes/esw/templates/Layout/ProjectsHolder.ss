@@ -7,11 +7,11 @@
 $Content
 
 <ul class="projects-holder">
-<% control AllChildren %>
+<% loop AllChildren %>
 <li class="position$Pos">
 <% if FeatureImage %>
 
-<div class="thumb-image" style="background: url(<% control FeatureImage.SetWidth(150) %>$Filename<% end_control %>) no-repeat 0px 0px;">
+<div class="thumb-image" style="background: url(<% loop FeatureImage.SetWidth(150) %>$Filename<% end_loop %>) no-repeat 0px 0px;">
 <div class="thumb-mask$Pos">
 </div>
 </div>
@@ -26,7 +26,7 @@ $Content
 
 <span class="more"><a href="$Link">Read More</a></span></li>
 
-<% end_control %>
+<% end_loop %>
 </ul>
 
 </div><!-- end content -->
