@@ -167,13 +167,18 @@ min-height:140px;
 background:url(../images/diagonal.png) no-repeat scroll 50% -9px;}
 
 h1.logo a {
+margin-left: -28px;
 float:left;
 display:block;
 text-indent:-9999px;
-width:980px;
+width:998px;
 outline: none;
-background:url(../images/uigbclogoredo.png) no-repeat -1px 11px;
-height:70px;}
+background:url(../images/uigbclogoredo.png) no-repeat 3px 5px;
+height:70px;
+background-size: 76em;
+height: 100px;
+margin-bottom: -26px;
+}
 
 p.uiowa a {
 float:left;
