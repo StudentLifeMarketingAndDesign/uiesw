@@ -56,7 +56,7 @@ $Content
 <p><em>Events from the Office of Sustainability</em></p>
 <ul>
 
-<% loop RSSFeedImport(3) %>
+<% loop RSSDisplay("3", "http://sustainability.uiowa.edu/events/rss?alt=rss") %>
 <li>
 <h4><a href="$Link">$Title</a></h4>
 <span class="external-link"><a href="$Link">Read More</a></span></li>
