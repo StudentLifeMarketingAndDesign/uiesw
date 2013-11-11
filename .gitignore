@@ -28,3 +28,5 @@ vendor/composer/autoload_namespaces.php
 vendor/composer/autoload_real.php
 
 vendor/composer/installed.json
+
+rss-display/

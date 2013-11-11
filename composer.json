@@ -9,8 +9,15 @@
 		"silverstripe/userforms": "*",
 		"silverstripe/recaptcha": "*",
 		"silverstripe/spamprotection": "*",
-		"silverstripe/googlesitemaps": "*"
+		"silverstripe/googlesitemaps": "*",
+		"md/rss-display": "*"
 	},
+  "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/rss-display"       
+        }
+    ],
 
 	"minimum-stability": "dev"
 }

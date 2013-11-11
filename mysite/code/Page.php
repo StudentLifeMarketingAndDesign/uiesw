@@ -142,7 +142,7 @@ class Page_Controller extends ContentController {
 	
 	function RSSFeedImport($numItems) {
 		
-		$feedURL= "feed://sustainability.uiowa.edu/events/rss?alt=rss";
+	  $feedURL= "feed://sustainability.uiowa.edu/events/rss?alt=rss";
 	  $output = new DataList();
 	  
 	  include_once(Director::getAbsFile(FRAMEWORK_DIR . '/thirdparty/simplepie/simplepie.inc'));
