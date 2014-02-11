@@ -1,6 +1,6 @@
 
 vendor/composer/installers/
-
+vendor/composer
 userforms/
 
 themes/simple/
