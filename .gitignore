@@ -13,7 +13,6 @@ googlesitemaps/
 
 framework/
 
-*.lock
 
 cms/
 
