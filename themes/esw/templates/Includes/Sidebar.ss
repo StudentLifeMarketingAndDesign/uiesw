@@ -7,7 +7,7 @@
 <h3><a href="/news-and-events/"><span>News</span><strong> &amp;</strong> Events</a></h3>
 <ul>
 
-<% loop News %>
+<% loop News.Sort("Created DESC") %>
 <li>
 <h4><a href="$Link">$Title</a></h4>
 <% if NewsDate %>
@@ -36,7 +36,7 @@ $getSummaryHTML(Content, 10)
 <br />
 <ul>
 
-<% loop NewsList %>
+<% loop NewsList.Sort("Created DESC") %>
 <li>
 <h4><a href="$Link">$Title</a></h4>
 <% if NewsDate %>
