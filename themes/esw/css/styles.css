@@ -237,24 +237,24 @@ text-transform:uppercase;
 text-align:center;
 padding:32px 0 0 0;
 float:left;}
-#nav ul li.home  {width:120px;background:url(../images/1.png) no-repeat 0px 14px;}
+#nav ul li.home  {width:120px;}
 #nav ul li.news-and-events {
-background:transparent url(../images/3.png) no-repeat scroll 200px 12px;
+
 width:215px;
 }
 #nav ul li.projects {
-background:transparent url(../images/4.png) no-repeat scroll 138px 12px;
+
 width:150px;
 }
 #nav ul li.about {
-background:transparent url(../images/5.png) no-repeat scroll 116px 8px;
+
 width:125px;
 }
 
 #nav ul li.donate {
 width:125px;
 }
-#nav ul li.join-uiesw {width:170px;background:url(../images/6.png) no-repeat 156px 4px;}
+#nav ul li.join-usgbc {width:170px;}
 
 
 
