@@ -27,7 +27,7 @@ $Content
 
 <h2><a href="$Link">$Title</a></h2>
 <p class="date">$PersonnelTitle</p>
-<span class="more"><a href="mailto:$PersonnelEmail">$PersonnelEmail</a></span></li>
+<% if $PersonnelEmail %><span class="more"><a href="mailto:$PersonnelEmail">$PersonnelEmail</a></span><% end_if %></li>
 <% end_loop %>
 </ul>
 
