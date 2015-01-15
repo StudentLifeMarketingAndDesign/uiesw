@@ -142,7 +142,7 @@ $Layout
 Phone: (319) 335-5051<br />
 Fax (319) 335-5660</p>
 <br />
-<p class="copywright">© <a href="http://www.uiowa.edu/">The University of Iowa</a> $Now.Year. All rights reserved.</p>
+<p class="copywright">© <a href="http://www.uiowa.edu/">The University of Iowa</a> {$Now.Year}. All rights reserved.</p>
 </div>
 <!--end contact-->
 
