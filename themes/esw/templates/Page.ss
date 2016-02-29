@@ -164,11 +164,7 @@ Fax (319) 335-5660</p>
 </div>
 <% end_if %> 
 
-<% if CurrentMember %>
-<div class="edit-box">
-<p><a href="$BaseHref/admin/show/{$ID}">Edit this page</a></p>
-</div>
-<% end_if %>  
+$BetterNavigator 
 
 </body>
 </html>

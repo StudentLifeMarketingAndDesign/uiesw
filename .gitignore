@@ -29,3 +29,9 @@ vendor/composer/autoload_real.php
 vendor/composer/installed.json
 
 rss-display/
+assets/
+betternavigator/
+gridfieldextensions/
+reports/
+segment-field/
+siteconfig/

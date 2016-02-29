@@ -3,14 +3,15 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.2",
-		"silverstripe/cms": "3.1.13",
-		"silverstripe/framework": "3.1.13",
+		"silverstripe/cms": "3.3.*@stable",
+		"silverstripe/framework": "3.3.*@stable",
 		"silverstripe-themes/simple": "*",
-		"silverstripe/userforms": "*",
+		"silverstripe/userforms": "2.*",
 		"silverstripe/recaptcha": "*",
 		"silverstripe/spamprotection": "*",
 		"silverstripe/googlesitemaps": "*",
-		"md/rss-display": "*"
+		"md/rss-display": "*",
+		"jonom/silverstripe-betternavigator" : "*"
 	},
   "repositories": [
         {
