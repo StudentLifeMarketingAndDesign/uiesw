@@ -167,17 +167,18 @@ min-height:140px;
 background:url(../images/diagonal.png) no-repeat scroll 50% -9px;}
 
 h1.logo a {
-margin-left: -28px;
-float:left;
-display:block;
-text-indent:-9999px;
-width:998px;
-outline: none;
-background:url(../images/uigbclogoredo.png) no-repeat 3px 5px;
-height:70px;
-background-size: 76em;
-height: 100px;
-margin-bottom: -26px;
+    margin-left: -28px;
+    float: left;
+    display: block;
+    text-indent: -9999px;
+    width: 998px;
+    outline: none;
+    background: url(../images/uigbclogoredo.png);
+    height: 70px;
+    background-size: 76em;
+    height: 100px;
+    margin-bottom: -26px;
+    background-size: cover;
 }
 
 p.uiowa a {
@@ -226,7 +227,9 @@ float:right;}
 
 #nav ul {
 width:915px;
-margin:2px 0px 0px 0px;float:right;}
+margin:2px 0px 0px 0px;float:right;
+	list-style-type: none;
+}
 #nav ul li a:hover {text-decoration:underline;}
 #nav ul li a {
 color:#825e55;
