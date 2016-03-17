@@ -193,8 +193,11 @@ height:30px;}
 #division-header p.esw a:hover {color:#999;}
 #division-header p.ce a:hover {color:#999;}
 p.ce {
-padding:11px 0 0 0;
-float:left;}
+    padding: 0;
+    float: left;
+    margin: 7px 0;
+	
+}
 
 p.ce a {
 	color:#afa8a8;}
