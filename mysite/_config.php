@@ -15,3 +15,4 @@ i18n::set_locale('en_US');
 if(Director::isLive()) {
 	Director::forceSSL(array('/^Security/','/^admin/'));
 }
+Authenticator::set_default_authenticator('SAMLAuthenticator');
