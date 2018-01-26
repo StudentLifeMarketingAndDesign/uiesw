@@ -12,13 +12,18 @@
 		"silverstripe/googlesitemaps": "*",
 		"md/rss-display": "*",
 		"jonom/silverstripe-betternavigator" : "3.*",
-		"silverstripe/activedirectory" : "3.*"
+		"silverstripe/activedirectory" : "3.*",
+		"md/division-analytics" : "*"
 	},
 	"repositories": [
 	    {
 	        "type": "vcs",
 	        "url": "https://github.com/StudentLifeMarketingAndDesign/rss-display"       
 	    },
+           {
+                "type": "vcs",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
+            },
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-activedirectory"
